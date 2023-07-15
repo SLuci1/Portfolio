@@ -131,6 +131,8 @@ span {
                     /* HOME */
 
 
+
+
 .home {
     display: flex;          /* Affichage en mode flex */
     align-items: center;    /* Alignement vertical des éléments */
@@ -150,7 +152,7 @@ span {
     line-height: 1.3;       /* Hauteur de ligne */
 }
 
-.home-content h1 span {
+.home-content h1 {
     color: var(--text-color); /* Couleur du texte pour la balise <span> */
 }
 
@@ -294,6 +296,8 @@ span {
                     /* WHO ? */
 
 
+
+
 .who {
     display: flex;                  /* Affichage en mode flex */
     justify-content: center;        /* Alignement horizontal du contenu au centre */
@@ -368,7 +372,11 @@ span {
 }
 
 
+
+
                     /* EXP */
+
+
 
 
 .exp {
