@@ -10,7 +10,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;         /* Utilisation de la police de caractères Poppins */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Variables CSS (couleurs principalement) */
@@ -282,14 +282,6 @@ span {
     width: 100%; /* Largeur lors du survol */
 }
 
-.home-imgHover {
-    position: absolute; /* Positionnement absolu */
-    top: 0;             /* Position en haut */
-    right: 0;           /* Position à droite */
-    width: 45%;         /* Largeur */
-    height: 100%;       /* Hauteur */
-}
-
 
 
 
@@ -397,12 +389,7 @@ span {
     margin-top: 10px;       /* Marge supérieure */
 }
 
-.content h2 {
-    color: var(--main-color);   /* Couleur du texte */
-    letter-spacing: 2px;        /* Espacement des lettres */
-}
-
-.content h3 {
+.content h2, h3 {
     color: var(--main-color);   /* Couleur du texte */
     letter-spacing: 2px;        /* Espacement des lettres */
 }
@@ -492,45 +479,45 @@ span {
 
 
 .contact {
-    min-height: auto; /* Hauteur minimale automatique */
-    padding-bottom: 7rem; /* Remplissage inférieur */
+    min-height: auto;       /* Hauteur minimale automatique */
+    padding-bottom: 7rem;   /* Remplissage inférieur */
 }
 
 .contact h2 {
-    display: inline-block; /* Affichage en ligne */
-    left: 50%; /* Position à gauche de 50% */
-    transform: translateX(-50%); /* Translation horizontale */
+    display: inline-block;      /* Affichage en ligne */
+    left: 50%;                  /* Position à gauche de 50% */
+    transform: translateX(-50%);/* Translation horizontale */
 }
 
 .contact form {
-    max-width: 70rem; /* Largeur maximale */
-    margin: 0 auto; /* Marge horizontale automatique */
+    max-width: 70rem;   /* Largeur maximale */
+    margin: 0 auto;     /* Marge horizontale automatique */
     text-align: center; /* Alignement du texte au centre */
 }
 
 .contact form .input-box {
-    position: relative; /* Positionnement relatif */
-    display: flex; /* Affichage en ligne */
+    position: relative;             /* Positionnement relatif */
+    display: flex;                  /* Affichage en ligne */
     justify-content: space-between; /* Justification de l'espace entre les éléments */
-    flex-wrap: wrap; /* Enveloppement des éléments sur plusieurs lignes */
+    flex-wrap: wrap;                /* Enveloppement des éléments sur plusieurs lignes */
 }
 
 .contact form .input-box .input-field {
     position: relative; /* Positionnement relatif */
-    width: 49%; /* Largeur de 49% */
-    margin: .8rem 0; /* Marge supérieure et inférieure de 0.8rem, marge latérale automatique */
+    width: 49%;         /* Largeur de 49% */
+    margin: .8rem 0;    /* Marge supérieure et inférieure de 0.8rem, marge latérale automatique */
 }
 
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea {
-    width: 100%; /* Largeur de 100% */
-    height: 100%; /* Hauteur de 100% */
-    padding: 1.5rem; /* Remplissage intérieur */
-    font-size: 1.6rem; /* Taille de police */
-    color: var(--text-color); /* Couleur du texte */
-    background: transparent; /* Fond transparent */
-    border-radius: .6rem; /* Bordure arrondie */
-    border: .2rem solid var(--main-color); /* Bordure */
+    width: 100%;                            /* Largeur de 100% */
+    height: 100%;                           /* Hauteur de 100% */
+    padding: 1.5rem;                        /* Remplissage intérieur */
+    font-size: 1.6rem;                      /* Taille de police */
+    color: var(--text-color);               /* Couleur du texte */
+    background: transparent;                /* Fond transparent */
+    border-radius: .6rem;                   /* Bordure arrondie */
+    border: .2rem solid var(--main-color);  /* Bordure */
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -539,15 +526,15 @@ span {
 }
 
 .contact form .focus {
-    position: absolute; /* Positionnement absolu */
-    top: 0; /* Position en haut */
-    left: 0; /* Position à gauche */
-    width: 0; /* Largeur nulle */
-    height: 100%; /* Hauteur de 100% */
+    position: absolute;                 /* Positionnement absolu */
+    top: 0;                             /* Position en haut */
+    left: 0;                            /* Position à gauche */
+    width: 0;                           /* Largeur nulle */
+    height: 100%;                       /* Hauteur de 100% */
     background: var(--second-bg-color); /* Couleur de fond */
-    border-radius: .6rem; /* Bordure arrondie */
-    z-index: -1; /* Index de la superposition */
-    transition: .5s; /* Transition */
+    border-radius: .6rem;               /* Bordure arrondie */
+    z-index: -1;                        /* Index de la superposition */
+    transition: .5s;                    /* Transition */
 }
 
 .contact form .input-box .input-field input:focus~.focus,
@@ -558,9 +545,9 @@ span {
 }
 
 .contact form .textarea-field {
-    position: relative; /* Positionnement relatif */
+    position: relative;     /* Positionnement relatif */
     margin: .8rem 0 2.7rem; /* Marge supérieure de 0.8rem, marge inférieure de 2.7rem, marge latérale automatique */
-    display: flex; /* Affichage en ligne */
+    display: flex;          /* Affichage en ligne */
 }
 
 .contact form .textarea-field textarea {
@@ -580,12 +567,12 @@ span {
 
 
 .footer {
-    display: flex; /* Affichage en ligne */
+    display: flex;                  /* Affichage en ligne */
     justify-content: space-between; /* Justification de l'espace entre les éléments */
-    align-items: center; /* Alignement vertical des éléments */
-    flex-wrap: wrap; /* Enveloppement des éléments sur plusieurs lignes */
-    padding: 2rem 9%; /* Remplissage supérieur et inférieur de 2rem, remplissage latéral de 9% */
-    background: var(--best-gray); /* Couleur de fond */
+    align-items: center;            /* Alignement vertical des éléments */
+    flex-wrap: wrap;                /* Enveloppement des éléments sur plusieurs lignes */
+    padding: 2rem 9%;               /* Remplissage supérieur et inférieur de 2rem, remplissage latéral de 9% */
+    background: var(--best-gray);   /* Couleur de fond */
 }
 
 .footer-text p {
@@ -593,28 +580,28 @@ span {
 }
 
 .footer-iconTop a {
-    position: relative; /* Positionnement relatif */
-    display: inline-flex; /* Affichage en ligne */
-    justify-content: center; /* Justification horizontale */
-    align-items: center; /* Alignement vertical */
-    padding: .8rem; /* Remplissage intérieur */
-    background: var(--main-color); /* Couleur de fond */
-    border: .2rem solid var(--main-color); /* Bordure */
-    border-radius: .6rem; /* Bordure arrondie */
-    z-index: 1; /* Index de la superposition */
-    overflow: hidden; /* Masquage du contenu qui dépasse */
+    position: relative;                     /* Positionnement relatif */
+    display: inline-flex;                   /* Affichage en ligne */
+    justify-content: center;                /* Justification horizontale */
+    align-items: center;                    /* Alignement vertical */
+    padding: .8rem;                         /* Remplissage intérieur */
+    background: var(--main-color);          /* Couleur de fond */
+    border: .2rem solid var(--main-color);  /* Bordure */
+    border-radius: .6rem;                   /* Bordure arrondie */
+    z-index: 1;                             /* Index de la superposition */
+    overflow: hidden;                       /* Masquage du contenu qui dépasse */
 }
 
 .footer-iconTop a::before {
-    content: ''; /* Contenu vide */
-    position: absolute; /* Positionnement absolu */
-    top: 0; /* Position en haut */
-    left: 0; /* Position à gauche */
-    width: 0; /* Largeur nulle */
-    height: 100%; /* Hauteur de 100% */
-    background: #464553; /* Couleur de fond */
-    z-index: -1; /* Index de la superposition */
-    transition: .5s; /* Transition */
+    content: '';                    /* Contenu vide */
+    position: absolute;             /* Positionnement absolu */
+    top: 0;                         /* Position en haut */
+    left: 0;                        /* Position à gauche */
+    width: 0;                       /* Largeur nulle */
+    height: 100%;                   /* Hauteur de 100% */
+    background: var(--best-gray);   /* Couleur de fond */
+    z-index: -1;                    /* Index de la superposition */
+    transition: .5s;                /* Transition */
 }
 
 .footer-iconTop a:hover::before {
@@ -622,9 +609,9 @@ span {
 }
 
 .footer-iconTop a i {
-    font-size: 2.4rem; /* Taille de police */
-    color: #464553; /* Couleur du texte */
-    transition: .5s; /* Transition */
+    font-size: 2.4rem;          /* Taille de police */
+    color: var(--best-gray);    /* Couleur du texte */
+    transition: .5s;            /* Transition */
 }
 
 .footer-iconTop a:hover i {
@@ -659,12 +646,6 @@ span {
     }
 }
 
-@media (max-width: 850px) {
-    .animate.home-img {
-        width: 55%; /* Réduction de la largeur de l'élément animé dans la section home pour les appareils jusqu'à 850px de largeur */
-    }
-}
-
 @media (max-width: 768px) {
     .header {
         background: var(--bg-color); /* Modification de la couleur de fond du header pour les appareils jusqu'à 768px de largeur */
@@ -675,59 +656,53 @@ span {
     }
 
     .navbar {
-        position: absolute; /* Positionnement absolu de la navbar pour les appareils jusqu'à 768px de largeur */
-        top: 100%; /* Position en haut de la navbar */
-        left: -100%; /* Position à gauche de la navbar (cachée initialement) */
-        width: 100%; /* Largeur de la navbar */
-        padding: 1rem 4%; /* Remplissage de la navbar */
-        background: var(--main-color); /* Couleur de fond de la navbar */
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); /* Ombre de la navbar */
-        z-index: 1; /* Index de la superposition */
-        transition: .25s ease; /* Transition */
-        transition-delay: .25s; /* Délai de transition */
+        position: absolute;                             /* Positionnement absolu de la navbar pour les appareils jusqu'à 768px de largeur */
+        top: 100%;                                      /* Position en haut de la navbar */
+        left: -100%;                                    /* Position à gauche de la navbar (cachée initialement) */
+        width: 100%;                                    /* Largeur de la navbar */
+        padding: 1rem 4%;                               /* Remplissage de la navbar */
+        background: var(--main-color);                  /* Couleur de fond de la navbar */
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);   /* Ombre de la navbar */
+        z-index: 1;                                     /* Index de la superposition */
+        transition: .25s ease;                          /* Transition */
+        transition-delay: .25s;                         /* Délai de transition */
     }
 
     .navbar.active {
-        left: 0; /* Affichage de la navbar en position gauche */
-        transition-delay: 0s; /* Pas de délai de transition */
+        left: 0;                /* Affichage de la navbar en position gauche */
+        transition-delay: 0s;   /* Pas de délai de transition */
     }
 
     .navbar .active-nav {
-        position: absolute; /* Positionnement absolu de l'élément actif de la navbar */
-        top: 0; /* Position en haut */
-        left: -100%; /* Position à gauche (cachée initialement) */
-        width: 100%; /* Largeur de l'élément actif de la navbar */
-        height: 100%; /* Hauteur de l'élément actif de la navbar */
-        background: var(--bg-color); /* Couleur de fond de l'élément actif de la navbar */
-        border-top: .1rem solid rgba(0, 0, 0, .2); /* Bordure supérieure de l'élément actif de la navbar */
-        z-index: -1; /* Index de la superposition */
-        transition: .25s ease; /* Transition */
-        transition-delay: 0s; /* Pas de délai de transition */
+        position: absolute;                         /* Positionnement absolu de l'élément actif de la navbar */
+        top: 0;                                     /* Position en haut */
+        left: -100%;                                /* Position à gauche (cachée initialement) */
+        width: 100%;                                /* Largeur de l'élément actif de la navbar */
+        height: 100%;                               /* Hauteur de l'élément actif de la navbar */
+        background: var(--bg-color);                /* Couleur de fond de l'élément actif de la navbar */
+        border-top: .1rem solid rgba(0, 0, 0, .2);/* Bordure supérieure de l'élément actif de la navbar */
+        z-index: -1;                                /* Index de la superposition */
+        transition: .25s ease;                      /* Transition */
+        transition-delay: 0s;                       /* Pas de délai de transition */
     }
 
     .navbar.active .active-nav {
-        left: 0; /* Affichage de l'élément actif de la navbar en position gauche */
+        left: 0;                /* Affichage de l'élément actif de la navbar en position gauche */
         transition-delay: .25s; /* Délai de transition */
     }
 
     .navbar a {
-        display: block; /* Affichage en bloc des liens de la navbar */
-        font-size: 2rem; /* Taille de police des liens de la navbar */
-        margin: 3rem 0; /* Marge supérieure et inférieure des liens de la navbar */
-        transform: translateX(-20rem); /* Déplacement des liens de la navbar hors de l'écran */
-        transition: .25s ease; /* Transition */
-        transition-delay: 0s; /* Pas de délai de transition */
+        display: block;                 /* Affichage en bloc des liens de la navbar */
+        font-size: 2rem;                /* Taille de police des liens de la navbar */
+        margin: 3rem 0;                 /* Marge supérieure et inférieure des liens de la navbar */
+        transform: translateX(-20rem);  /* Déplacement des liens de la navbar hors de l'écran */
+        transition: .25s ease;          /* Transition */
+        transition-delay: 0s;           /* Pas de délai de transition */
     }
 
     .navbar.active a {
-        transform: translateX(0); /* Affichage des liens de la navbar en position initiale */
-        transition-delay: .25s; /* Délai de transition */
-    }
-
-    .home-imgHover {
-        pointer-events: none; /* Désactivation des événements pointer pour l'élément hover de la section home */
-        background: var(--bg-color); /* Couleur de fond de l'élément hover de la section home */
-        opacity: .6; /* Opacité de l'élément hover de la section home */
+        transform: translateX(0);   /* Affichage des liens de la navbar en position initiale */
+        transition-delay: .25s;     /* Délai de transition */
     }
 }
 
@@ -739,15 +714,15 @@ span {
         left: 31px; /* Décale l'élément ::after vers la gauche */
     }
     .container {
-        width: 100%; /* Définit la largeur du conteneur à 100% */
-        padding-left: 70px; /* Ajoute un espacement à gauche du conteneur */
-        padding-right: 25px; /* Ajoute un espacement à droite du conteneur */
+        width: 100%;            /* Définit la largeur du conteneur à 100% */
+        padding-left: 70px;     /* Ajoute un espacement à gauche du conteneur */
+        padding-right: 25px;    /* Ajoute un espacement à droite du conteneur */
     }
     .container::before {
-        left: 60px; /* Décale l'élément ::before vers la gauche */
-        border: medium solid white; /* Définit une bordure solide de taille moyenne de couleur blanche */
-        border-width: 10px 10px 10px 0; /* Définit l'épaisseur de la bordure pour créer une flèche */
-        border-color: transparent #373648 transparent transparent; /* Définit la couleur de la bordure pour créer une flèche */
+        left: 60px;                                                         /* Décale l'élément ::before vers la gauche */
+        border: medium solid white;                                       /* Définit une bordure solide de taille moyenne de couleur blanche */
+        border-width: 10px 10px 10px 0;                                     /* Définit l'épaisseur de la bordure pour créer une flèche */
+        border-color: transparent var(--best-gray) transparent transparent; /* Définit la couleur de la bordure pour créer une flèche */
     }
     .left::after , .right::after {
         left: 15px; /* Décale les éléments ::after des côtés gauche et droit vers la gauche */
@@ -786,10 +761,6 @@ span {
         font-size: 5.2rem; /* Réduit la taille de la police pour l'élément h1 à 5.2rem */
     }
 
-    .education {
-        padding: 10rem 4% 5rem 5%; /* Modifie le remplissage de l'élément .education */
-    }
-
     .contact form .input-box .input-field {
         width: 100%; /* Définit la largeur de l'élément input-field à 100% */
     }
@@ -815,7 +786,7 @@ span {
         display: flex;
         align-items: center;
         flex-direction: column; /* Affiche le contenu de l'élément .home-content en utilisant une disposition en colonne */
-        text-align: center; /* Centre le texte dans l'élément .home-content */
+        text-align: center;     /* Centre le texte dans l'élément .home-content */
     }
 
     .home-content h1 {
@@ -826,11 +797,12 @@ span {
 
 
 
-
-/* ANIMATION RELOAD AND SCROLL */
-
+/* ANIMATIONS */
 
 
+
+
+/* Header */
 
 .animate {
     position: absolute;
@@ -841,11 +813,7 @@ span {
     background: var(--bg-color);
     z-index: 98;
 }
-/* Définit une animation pour les éléments ayant la classe .animate */
 
-.animate.home-img {
-    width: 50%;
-}
 /* Réduit la largeur de l'image de la page d'accueil à 50% */
 
 .logo .animate,
@@ -855,37 +823,8 @@ span {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
-/* Applique l'animation showRight à certains éléments lorsque la classe .animate est combinée avec .logo, .navbar, #menu-icon et .home.show-animate */
 
-.animate.scroll {
-    transition: 1s ease;
-    transition-delay: calc(.3s / var(--i));
-    animation: none;
-}
-/* Applique une transition lors du défilement aux éléments ayant la classe .animate.scroll */
-
-section:nth-child(odd) .animate.scroll,
-.footer .animate.scroll {
-    background: var(--second-bg-color);
-}
-/* Change la couleur d'arrière-plan des éléments .animate.scroll pour les sections impaires et le pied de page */
-
-.education .education-box .animate.scroll {
-    width: 105%;
-}
 /* Agrandit la largeur des éléments .animate.scroll dans la section education */
-
-.about.show-animate .animate.scroll,
-.education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
-    width: 0;
-}
-/* Définit une transition avec un délai spécifique pour les éléments .animate.scroll lorsqu'ils ont les classes .show-animate et .about, .education, .skills, .contact ou .footer. Réduit la largeur des éléments à 0 */
-
-
 
 
 /* KEYFRAMES ANIMATION */

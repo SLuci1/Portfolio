@@ -1,4 +1,4 @@
-// toggle icon navbar
+// Basculer la barre de navigation de l'icône
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -10,7 +10,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-// scroll sections
+// Sections de défilement
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -47,18 +47,18 @@ window.onscroll = () => {
         }
     });
 
-    // sticky header
+    // Pour que le header reste
     let header = document.querySelector('header');
 
     // Ajoute ou supprime la classe 'sticky' de l'en-tête en fonction de la position de défilement
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // remove toggle icon and navbar when click navbar links (scroll)
+    // Supprimer l'icône de basculement et la barre de navigation lorsque vous cliquez sur les liens de la barre de navigation
     // Supprime la classe 'bx-x' de l'icône du menu et la classe 'active' de la barre de navigation lorsque le lien de la barre de navigation est cliqué
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 
-    // animation footer on scroll
+    // Pied de page d'animation sur le défilement
     let footer = document.querySelector('footer');
     // Calcule la hauteur totale défilable de la page
     let scrollable = document.documentElement.scrollHeight - window.innerHeight;
