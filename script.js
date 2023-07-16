@@ -74,3 +74,32 @@ window.onscroll = () => {
         footer.classList.remove('show-animate');
     }
 }
+
+function estVisible(element) {
+    const position = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const sectionHeight = element.offsetHeight;
+    const offset = sectionHeight / 3; // Ajuste le décalage en fonction de tes préférences
+  
+    return position.top < (windowHeight - offset);
+  }
+  
+  function animerSection() {
+    const whoSection = document.getElementById('who');
+    if (estVisible(whoSection)) {
+      whoSection.classList.add('apparition');
+    }
+  
+    const expSection = document.getElementById('exp');
+    if (estVisible(expSection)) {
+      expSection.classList.add('apparition');
+    }
+  
+    const contactSection = document.getElementById('contact');
+    if (estVisible(contactSection)) {
+      contactSection.classList.add('apparition');
+    }
+  }
+  
+  window.addEventListener('scroll', animerSection);
+  

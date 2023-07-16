@@ -298,6 +298,13 @@ span {
     gap: 2rem;                      /* Espacement vertical entre les éléments */
     background: var(--bg-color);    /* Couleur de fond */
     padding-bottom: 6rem;           /* Espacement inférieur */
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.who.apparition {
+    opacity: 1;
 }
 
 .heading {
@@ -375,6 +382,13 @@ span {
     margin: 20px;                       /* Marge extérieure */
     background-color: var(--bg-color);  /* Couleur de fond */
     min-height: 100vh;                  /* Hauteur minimale */
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.exp.apparition {
+    opacity: 1;
 }
 
 .content {
@@ -481,6 +495,13 @@ span {
 .contact {
     min-height: auto;       /* Hauteur minimale automatique */
     padding-bottom: 7rem;   /* Remplissage inférieur */
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.contact.apparition {
+    opacity: 1;
 }
 
 .contact h2 {
@@ -870,3 +891,43 @@ span {
 }
 /* Définit une animation pour réduire la largeur des éléments vers la droite */
 
+
+/* Sroll Bar */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #29273C #949497;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #CACACB;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #949497;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #29273C;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #373648;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #54535E;
+  }
+  
